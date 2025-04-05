@@ -47,7 +47,7 @@ h1 {
   letter-spacing: 1px;
   color: #D4AF37; /* Золото */
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 36px;
   margin-bottom: 1.5rem;
 }
 
@@ -892,7 +892,7 @@ body {
 
 /* Увеличенные тексты */
 .invitation-title {
-  font-size: 2.5rem; /* 40px */
+  font-size: 46px; /* 40px */
   line-height: 1.3;
 }
 
