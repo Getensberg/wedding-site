@@ -1,0 +1,1330 @@
+:root {
+  --gold: #D4AF37;               /* Основной акцент */
+  --deep-red: #3b030c;           /* PMS 4102 C */
+  --emerald: #193323;            /* PMS 7743 C */
+  --anthracite: #1A1616;         /* 19-4007 TCX */
+  --ivory: #F0EAE0;              /* Для текста */
+  --velvet: #0F0A0A;             /* Фон */
+  --light-gold: #E8D49A;         /* Светлое золото */
+  --red-primary: #551C25;        /* Основной красный */
+  --red-secondary: #8B2E3D;      /* Вторичный красный */
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fish-img {
+  width: 150px;
+}
+
+.sec-h2 {
+  margin-bottom: 100px;
+}
+
+.sec-h1 {
+  color: var(--gold);
+}
+
+
+.fish-box {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-family: 'Great Vibes', 'Marcellus', serif;
+  letter-spacing: 1px;
+  color: #D4AF37; /* Золото */
+  font-weight: 300;
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: 'Great Vibes', 'Marcellus', serif; /* Антикварный */
+  letter-spacing: 1px;
+  color: #D4AF37; /* Золото */
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+h3, h4 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  color: var(--light-gold);
+}
+
+.countdown-title {
+  font-family: 'Great Vibes', 'Marcellus', serif;
+  letter-spacing: 1px;
+  color: #D4AF37; /* Золото */
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.and {
+  font-family: 'Marcellus', serif;
+  font-size: 25px;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif; /* Элегантный книжный */
+  font-weight: 500;
+  background-color: black; /* Глубокий антрацит */
+  color: #E8E1D7; /* Слоновая кость */
+}
+
+
+
+h3, h4 {
+  font-family: 'EB Garamond', serif; /* Классический */
+  font-weight: 500;
+}
+
+.button, .menu {
+  font-family: 'Playfair Display', serif; /* С засечками, но современный */
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(85,28,37,0.9) 0%, rgba(43,42,42,0.95) 100%);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(212,175,55,0.2);
+}
+
+.chip {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold) 40%, var(--red-primary) 100%);
+  border: 3px solid var(--cream);
+}
+
+.luxury-card {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(139,46,61,0.15) 0%, rgba(26,22,22,0.9) 70%),
+    linear-gradient(to bottom, #1A1616, #0F0A0A);
+  border: 1px solid rgba(212,175,55,0.3);
+  box-shadow:
+    0 10px 30px rgba(85,28,37,0.2),
+    inset 0 0 20px rgba(212,175,55,0.1);
+}
+
+.gold-button {
+  background: linear-gradient(to right, #D4AF37, #E8D49A);
+  color: #551C25 !important;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255,255,255,0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+
+.gold-button:hover:after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ripple {
+  0% { transform: scale(0, 0); opacity: 0.5; }
+  100% { transform: scale(50, 50); opacity: 0; }
+}
+
+.invitation-card {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.invitation-card {
+  text-align: center;
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.invitation-card h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  letter-spacing: 5px;
+  color: var(--light-gold);
+  margin: 20px 0;
+}
+
+.button {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: 700;
+}
+
+.button {
+  transition: all 0.3s;
+  background: var(--red-primary);
+  border: 2px solid var(--gold);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(209,46,73,0.4);
+  background: var(--red-secondary);
+}
+
+.casino-card {
+  position: relative;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.decor-chip {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #D4AF37 40%, #551C25 100%);
+  border-radius: 50%;
+  border: 3px solid #F5F5DC;
+}
+
+.glow {
+  filter: drop-shadow(0 0 8px rgba(212,175,55,0.6)); /* свечение */
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* секции */
+.main-cotainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* шапка */
+.head {
+  display: block;
+  width: 100%;
+  background-color: #5c5959;
+  height: 60px; /* это менять для мобилки */
+}
+
+/* 1 главная секция */
+
+/* фоновый блок                */
+
+.casino-hero {
+  width: 45%;
+}
+
+.hero-section {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.names-container {
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.casino-hero {
+  height: 70vh;
+  min-height: 500px;
+  background:
+    url('/Pic/photo_2025-03-31_15-38-01.jpg')
+    center/contain no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Наложение для лучшей читаемости */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10,5,5,0.4);
+  mix-blend-mode: multiply;
+}
+
+/* Контент поверх фона */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.tagline {
+  font-family: 'Marcellus', serif;
+  font-size: 3.5vw;
+  color: #E8D49A;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+/* Декоративные фишки */
+.decorative-chips {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.chip {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #F0EAE0;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease;
+}
+
+.chip.gold {
+  background: radial-gradient(circle, #D4AF37 30%, #B38D22 100%);
+}
+
+.chip.red {
+  background: radial-gradient(circle, #551C25 30%, #3A121B 100%);
+}
+
+.chip.green {
+  background: radial-gradient(circle, #44693D 30%, #2E4A28 100%);
+}
+
+.chip:hover {
+  transform: translateY(-15px) rotate(15deg);
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Параллакс-эффект */
+@media (min-width: 992px) {
+  .casino-hero {
+    background-attachment: fixed;
+  }
+}
+
+
+
+
+/* текст самый главный */
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* счетчик */
+
+.countdown-container {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.countdown-item {
+  background-color: #f8e1e1;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--deep-red)
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 2 вторая секция */
+
+
+
+.second-box {
+  margin-top: 50px;
+}
+
+.second-text {
+  margin-bottom: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-img {
+  width: 600px;    /* 2 менять на телеф? */
+  height: 400px;
+  border: 2px solid var(--gold);
+    box-shadow:  0 0 15px rgba(255, 215, 0, 0.6),
+                  0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.round-img {
+
+    border-radius: 50%;
+    width: 100%;            /* Занимает всю ширину контейнера */
+    max-width: 300px;       /* Но не больше 200px */
+    aspect-ratio: 1/1;      /* Сохраняет пропорции 1:1 */
+    object-fit: cover;
+    display: block;         /* Убирает лишние отступы */
+    margin: 0 auto;         /* Центрирует */
+
+    border: 4px solid var(--gold);
+    box-shadow:  0 0 15px rgba(255, 215, 0, 0.6),
+                  0 10px 25px rgba(0, 0, 0, 0.3);
+/*
+                  outline: 1px solid rgba(255, 215, 0, 0.4);
+                  outline-offset: 2px; */
+
+}
+
+
+
+/* блок ремарок и меню типо */
+
+.remark-con {
+  margin-bottom: 40px;
+}
+
+.remark-box {
+  max-width: 800px;
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  min-width: 800px;
+  position: relative;
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+
+
+
+/* чек бокс форма подтверждения */
+
+
+.rsvp-simple {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #fff9f9;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(183,110,121,0.1);
+  text-align: center;
+}
+
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #e8c8c8;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.submit-btn {
+  background: var(--deep-red);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.success-msg, .error-msg {
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  animation: fadeIn 0.5s;
+}
+
+.success-msg {
+  background: #f0f9f0;
+  border: 1px solid #c8e8c8;
+  color: var(--emerald)
+}
+
+.error-msg {
+  background: #fff0f0;
+  border: 1px solid #ffd0d0;
+  color: var(--deep-red)
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+.schedule-box {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  width: 400px;
+
+}
+
+.sched-two {
+  width: 100%;
+}
+
+.schedule-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.event-name {
+  margin-bottom: 0;
+  font-size: 1.3rem; /* 20.8px */
+  /* margin-bottom: 1rem; */
+}
+
+.time-slot {
+  margin-right: 40px;
+}
+
+
+/* карта */
+
+
+.soho-wedding-map {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 80px;
+  font-family: 'Georgia', serif;
+  padding-bottom: 40px;
+}
+
+.soho-wedding-map h2 {
+  color: var(--deep-red);
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.venue-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(183,110,121,0.15);
+}
+
+.venue-info {
+  padding: 20px;
+  background: #fdf5f6;
+  border-bottom: 1px solid #f0e0e2;
+}
+
+.venue-info p {
+  margin: 8px 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.venue-title {
+  color: var(--deep-red);
+}
+
+.venue-info a {
+  color: #b76e79;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.venue-info a:hover {
+  text-decoration: underline;
+}
+
+.custom-map {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.map-buttons {
+  display: flex;
+  padding: 15px;
+  background: #fdf5f6;
+  gap: 10px;
+}
+
+.nav-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--deep-red);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-button.phone {
+  background: white;
+  color: color var(--deep-red);
+  border: 1px solid #e0c8cb;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(183,110,121,0.3);
+}
+
+.nav-button svg {
+  stroke-width: 2;
+}
+
+
+/* ----------  */
+
+
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  background-color: black;
+  color: var(--ivory);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Карточки в стиле казино */
+.card {
+  background: linear-gradient(145deg, rgba(85,28,37,0.9) 0%, rgba(43,42,42,0.95) 100%);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(212,175,55,0.2);
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+
+.luxury-card {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(139,46,61,0.15) 0%, rgba(26,22,22,0.9) 70%),
+    linear-gradient(to bottom, var(--anthracite), var(--velvet));
+  border: 1px solid rgba(212,175,55,0.3);
+  box-shadow:
+    0 10px 30px rgba(85,28,37,0.2),
+    inset 0 0 20px rgba(212,175,55,0.1);
+}
+
+/* Кнопки в стиле казино */
+.button, .submit-btn, .nav-button {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--gold);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(183,110,121,0.3);
+}
+
+.gold-button {
+  background: linear-gradient(to right, var(--gold), var(--light-gold));
+  color: var(--deep-red) !important;
+  border: none;
+  padding: 12px 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+}
+
+.gold-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212,175,55,0.4);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ripple {
+  0% { transform: scale(0, 0); opacity: 0.5; }
+  100% { transform: scale(50, 50); opacity: 0; }
+}
+
+/* Счетчик обратного отсчета */
+.countdown-container {
+  background: rgba(26, 22, 22, 0.8);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--gold);
+}
+
+.countdown-item {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.countdown-number {
+  font-size: 3rem;
+  color: var(--light-gold);
+  text-shadow: 0 0 10px var(--gold);
+}
+
+.countdown-label {
+  font-family: 'Cormorant Garamond';
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Блок с фото */
+.pic-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.pic-box {
+  transition: transform 0.3s ease;
+}
+
+.pic-box:hover {
+  transform: translateY(-10px);
+}
+
+
+
+/* Форма подтверждения */
+.rsvp-simple {
+  max-width: 500px;
+  background: rgba(26, 22, 22, 0.9);
+  border: 1px solid var(--gold);
+}
+
+.form-group input {
+  background: rgba(255,255,255,0.1);
+  color: var(--ivory);
+  border: 1px solid var(--gold);
+}
+
+/* Карта */
+.custom-map {
+  height: 400px;
+  border: 2px solid var(--gold) !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+  }
+
+  .countdown-item {
+    min-width: 60px;
+    padding: 10px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .pic-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Специальные эффекты */
+.glow {
+  filter: drop-shadow(0 0 8px rgba(212,175,55,0.6));
+}
+
+.chip {
+  transition: all 0.3s ease;
+}
+
+.chip:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* Блок ремарок */
+
+.remark-h1 {
+  color: var(--light-gold);
+  font-family: "Great Vibes",'Marcellus', serif;
+  font-size: 2.0rem; /* 24px */
+  color: var(--gold);
+  margin-bottom: 1rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+/* Увеличенные тексты */
+.invitation-title {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.3;
+}
+
+.invitation-message {
+  font-size: 1.3rem; /* 20.8px */
+  line-height: 1.6;
+}
+
+/* Расписание */
+.schedule-h1 {
+  font-size: 2.5rem; /* 32px */
+  margin-bottom: 1.5rem;
+  font-family: "Great Vibes",'Marcellus', serif;
+  letter-spacing: 2px
+}
+
+.time-slot {
+  font-size: 1.5rem; /* 24px */
+  color: var(--light-gold);
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+}
+
+
+
+/* Блок пожеланий с желтыми линиями */
+
+
+.remark-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+
+
+.remark-text {
+  font-size: 1.2rem; /* 19.2px */
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+/* Адаптивность для текстов */
+@media (max-width: 768px) {
+  .invitation-title {
+    font-size: 2rem; /* 32px */
+  }
+
+  .invitation-message {
+    font-size: 1.1rem; /* 17.6px */
+  }
+
+  .schedule-h1 {
+    font-size: 1.7rem; /* 27.2px */
+  }
+
+  .time-slot {
+    font-size: 1.3rem; /* 20.8px */
+  }
+
+  .event-name {
+    font-size: 1.1rem; /* 17.6px */
+  }
+
+  .remark-h1 {
+    font-size: 1.7rem; /* 20.8px */
+  }
+
+  .remark-text {
+    font-size: 1rem; /* 16px */
+    text-align: left;
+  }
+}
+
+
+
+/* -------------------------- */
+
+/* ==================== */
+/* Мобильные стили */
+/* ==================== */
+/* ==================== */
+/* Мобильные стили */
+/* ==================== */
+@media (max-width: 767px) {
+  /* Основное выравнивание */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Общие настройки */
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Центрирование всех основных блоков */
+  .main-container,
+  .box,
+  .second-box,
+  .invitation-card,
+  .card,
+  .luxury-card,
+  .rsvp-simple,
+  .soho-wedding-map,
+  .countdown-container,
+  .remark-box {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Заголовки */
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .countdown-title {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Герой-секция */
+  .casino-hero {
+    height: 50vh;
+    min-height: 300px;
+    margin: 15px auto;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .tagline {
+    font-size: 5.5vw;
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 90%;
+  }
+
+  .countdown {
+    flex-direction: row; /* Горизонтальное расположение */
+    flex-wrap: wrap; /* Перенос на маленьких экранах */
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .countdown-item {
+    padding: 8px 4px;
+    margin: 5px;
+    min-width: 60px; /* Фиксируем минимальную ширину */
+  }
+
+  .countdown-number {
+    font-size: 1.8rem; /* Увеличиваем цифры */
+  }
+
+  .countdown-label {
+    font-size: 0.65rem;
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+
+  /* Карточки */
+  .card, .luxury-card {
+    padding: 1.2rem;
+    margin: 1rem auto;
+    width: calc(100% - 30px);
+  }
+
+  /* Декоративные фишки */
+  .decorative-chips {
+    justify-content: center;
+  }
+
+  /* Форма RSVP */
+  .rsvp-simple {
+    width: calc(100% - 30px);
+  }
+
+  /* Расписание */
+  .schedule-box {
+    justify-content: center;
+  }
+
+  /* Карта */
+  .soho-wedding-map {
+    padding: 0;
+    width: calc(100% - 30px);
+  }
+
+  /* Кнопки навигации */
+  .map-buttons {
+    justify-content: center;
+  }
+
+  /* Блок ремарок */
+  .remark-box {
+    width: calc(100% - 30px);
+    margin: 1rem auto;
+  }
+
+  /* Центрирование текста */
+  .invitation-message,
+  .remark-text,
+  .venue-info p {
+    text-align: left;
+  }
+
+  /* Изображения */
+  .round-img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Фиксируем максимальную ширину для больших экранов */
+  @media (max-width: 480px) {
+    .main-container,
+    .box,
+    .second-box,
+    .invitation-card,
+    .card,
+    .luxury-card,
+    .rsvp-simple,
+    .soho-wedding-map,
+    .countdown-container,
+    .remark-box {
+      max-width: 480px;
+    }
+
+  .chip {
+    display: none;
+  }
+
+
+  .countdown-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .countdown {
+    gap: 5px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .countdown-item {
+    min-width: 30px;
+    width: 40px;
+    padding: 6px 2px;
+    margin: 0;
+  }
+
+  .countdown-number {
+    font-size: 1.3rem;
+    width: 100%;
+
+  }
+
+
+  .countdown-label {
+    font-size: 8px;
+  }
+
+  .second-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;      /* поправить текст */
+  }
+
+  .sec-h1 {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .sec-h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pic-box {
+    max-width: 90%;
+  }
+
+  /* .image {
+    max-width: 100%;
+  } */
+
+  .remark-box {
+    min-width: 250px;
+  }
+
+
+
+  .rsvp-title {
+    font-size: 16px;
+  }
+
+  .rsvp-form {
+    justify-content: center;
+  }
+
+  .check-form-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+  }
+
+  .submit-btn {
+    width: 80%;
+    /* height: 45px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .schedule-box {
+    gap: 20px;
+  }
+
+  .time-slot{
+    margin: 0
+  }
+
+  .soho-wedding-map h2  {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .venue-info{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-button {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .event-name {
+    font-size: 16px;
+  }
+
+  .time-slot {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  /* Контейнер карты */
+.map-container {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Основной блок карты */
+.custom-map {
+  width: 100% !important;
+  height: 300px !important; /* Уменьшаем высоту */
+  border: 2px solid var(--gold) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .custom-map {
+    height: 250px !important;
+  }
+
+  .venue-info {
+    padding: 15px 10px;
+  }
+
+  .venue-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Кнопки под картой */
+.map-buttons {
+  flex-direction: column; /* Располагаем кнопки вертикально */
+  gap: 10px;
+  padding: 15px 10px;
+}
+
+.nav-button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.countdown-container {
+  margin-top: 20px;
+}
+
+.square-img {
+  height: 250px;
+  width: 350px;
+}
+
+.round-img {
+  max-width: 200px;
+}
+
+.schedule-box {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  width: 320px;
+
+}
+
+  }
+}
