@@ -808,7 +808,12 @@ body {
 }
 
 .pic-text {
-  font-size: 20px;
+  font-size: 36px;
+  color: var(--gold);
+}
+
+.sqr-pic {
+  letter-spacing: 2px;
 }
 
 
