@@ -801,6 +801,10 @@ body {
   transform: translateY(-10px);
 }
 
+.pic-text {
+  font-size: 20px;
+}
+
 
 
 /* Форма подтверждения */
@@ -1324,6 +1328,10 @@ body {
   justify-content: space-between; */
   width: 320px;
 
+}
+
+.pic-text {
+  font-size: 16px;
 }
 
   }
