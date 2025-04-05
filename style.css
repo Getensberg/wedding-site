@@ -16,6 +16,8 @@
   font-style: normal;
 }
 
+
+
 .fish-img {
   width: 150px;
 }
@@ -93,6 +95,10 @@ body {
   font-weight: 500;
   background-color: black; /* Глубокий антрацит */
   color: #E8E1D7; /* Слоновая кость */
+  background-image: url('/Pic/Group\ 1.png');
+  background-size: contain;       /* Изображение не растягивается */
+  background-repeat: no-repeat;   /* Без повторения */
+  background-position: top;   /* По центру */
 }
 
 
