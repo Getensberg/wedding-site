@@ -482,7 +482,8 @@ h3, h4 {
 }
 
 .dima {
-  object-position: center 23%;
+  object-fit: contain;
+  object-position: center 1%;
 }
 
 
